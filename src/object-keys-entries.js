@@ -12,7 +12,7 @@ export function sortedKeys(obj) {
 export function getFilteredKey(obj) {
   const arr = Object.keys(obj);
   console.log(arr);
-  return arr.map(arr.filter(n => n.age));
+  return arr.filter(n => n.length < 4);
 }
 
 export function getArrayOfKeysAndValues(obj) {
