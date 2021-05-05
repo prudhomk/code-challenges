@@ -12,8 +12,19 @@ export function updateNumbers(obj) {
 }
 
 export function totalCharacters(arr) {
-  
-  return arr.length;
+  let character = 0;
+  Object.entries(arr).forEach(n => {
+    console.log(n);
+    if (n.spouse === '') {
+      character++;
+    } else if (n.children[0].length > 0) {
+      character = character + character.children.length;
+    } else {
+      character++;
+    }
+      
+  });
+  return character;
 }
 
 export function hasChildrenEntries(arr, character) {
@@ -31,14 +42,13 @@ export function hasChildrenEntries(arr, character) {
 } 
 
 export function sortByChildren(arr){
-  return arr.sort((a, b => {
-    if (a.childrenlength < b.children.length) {
+  arr.sort((a, b) => {
+    if (a.children.length < b.children.length) {
       return -1;
-    }
-    if (a.childrenlength > b.children.length) {
+    } else {
       return 1;
     }
-  // a must be equal to b
-    return 0;
-  }));
-} 
+  });
+  console.log(arr);
+  return arr;
+}

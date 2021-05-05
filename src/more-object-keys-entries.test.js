@@ -155,7 +155,7 @@ test('has children', () => {
   expect(output2).toEqual(false);//assert
 });
 
-test('sort by children', () => {
+test.only('sort by children', () => {
   const characters = [
     {
       name: 'Eddard',
