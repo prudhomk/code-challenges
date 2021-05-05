@@ -13,16 +13,10 @@ export function updateNumbers(obj) {
 
 export function totalCharacters(arr) {
   let character = 0;
-  Object.entries(arr).forEach(n => {
-    console.log(n);
-    if (n.spouse === '') {
-      character++;
-    } else if (n.children[0].length > 0) {
-      character = character + character.children.length;
-    } else {
-      character++;
-    }
-      
+  arr.forEach(n => {
+    if (n.spouse !== null) character++;
+    if (n.children !== []) character += n.children.length;
+    if (n.name !== '') character++;
   });
   return character;
 }

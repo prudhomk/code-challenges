@@ -105,7 +105,7 @@ test('total characters', () => {
 });
 
 test('has children', () => {
-  let arr = [
+  const arr = [
     {
       name: 'Eddard',
       spouse: 'Catelyn',
@@ -155,7 +155,7 @@ test('has children', () => {
   expect(output2).toEqual(false);//assert
 });
 
-test.only('sort by children', () => {
+test('sort by children', () => {
   const characters = [
     {
       name: 'Eddard',
