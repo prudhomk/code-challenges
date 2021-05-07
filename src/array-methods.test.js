@@ -62,3 +62,6 @@ test('It should remove last characters', () => {
   expect(removeLastCharacters('', 1)).toStrictEqual('');
   expect(removeLastCharacters('a', 1)).toStrictEqual('');
 });
+
+
+

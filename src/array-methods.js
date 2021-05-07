@@ -1,4 +1,3 @@
-import { isInaccessible } from "@testing-library/dom";
 
 export function howMuchPencil(str) {
   const arr = [];
@@ -24,16 +23,3 @@ export function removeLastCharacters(str, numberOfCharacters) {
   return str.substring(0, str.length - numberOfCharacters);
 }
 
-//stretch goals
-
-export function totalSumCSV(str) {
-
-}
-
-export function removeVowels(str) {
-
-}
-
-export function extractVowels(str) {
-  
-}
