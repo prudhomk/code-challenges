@@ -12,11 +12,15 @@ export function wordsToCharList(arr) {
 }
 
 export function listFoods(recipe) {
-  return recipe.ingredients.map(n => n.split(' ').splice(2).join(' '));
+  const arr = recipe.ingredients.map(n => n.split(' ').splice(2).join(' '));
+  console.log(arr);
+  return arr;
 }
 
 export function stepActions(recipe) {
-  return recipe.steps.map(n => n.split(' ').splice(0, 1)[0]);
+  const arr = recipe.steps.map(n => n.split(' ').splice(0, 1)[0]);
+  console.log(arr);
+  return arr;
 }
 
 export function removeLastCharacters(str, numberOfCharacters) {
