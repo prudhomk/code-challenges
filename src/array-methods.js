@@ -1,3 +1,5 @@
+import { isInaccessible } from "@testing-library/dom";
+
 export function howMuchPencil(str) {
   const arr = [];
   for (let i = 0; i <= str.length; i++) {
@@ -11,14 +13,11 @@ export function wordsToCharList(arr) {
 }
 
 export function listFoods(recipe) {
-  const arr = [];
-  arr.push(recipe.ingredients);
-  console.log(arr);
-
+  return recipe.ingredients.map(n => n.split(' ').splice(2).join(' '));
 }
 
 export function stepActions(recipe) {
-  
+  return recipe.steps.map(n => n.split(' ').splice(0, 1)[0]);
 }
 
 export function removeLastCharacters(str, numberOfCharacters) {
