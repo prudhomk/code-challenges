@@ -16,13 +16,13 @@ test('It should return a set of characters', () => {
 });
 
 
-test('It should return a list of items', () => {
+test.only('It should return a list of items', () => {
   expect(listFoods('gruffaloCrumble')).toStrictEqual(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
     
 });
 
 test('It should return step actions', () => {
-  expect(listFoods('gruffaloCrumble')).toStrictEqual(['Pre-heat', 'De-prickle', 'Sprinkle', 'Mix', 'Grease', 'Combine', 'Fold', 'Spread', 'Bake']);
+  expect(stepActions('gruffaloCrumble')).toStrictEqual(['Pre-heat', 'De-prickle', 'Sprinkle', 'Mix', 'Grease', 'Combine', 'Fold', 'Spread', 'Bake']);
     
 });
 
