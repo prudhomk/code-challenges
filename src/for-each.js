@@ -9,7 +9,8 @@ export function findMax(matrix) {
 }
 
 export function totalSum(matrix) {
-
+  const value = matrix.map(n => n.reduce((sum, n) => sum += n, 0));
+  return value.reduce((solution, value) => solution += value, 0);
 }
 
 export function grandTotal(stores) {
