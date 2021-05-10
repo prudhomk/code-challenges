@@ -1,4 +1,4 @@
-import { returnTen, findMax, totalSum, grandTotal, salesData } from './array-methods';
+import { returnTen, findMax, totalSum, grandTotal, salesData } from './for-each';
 
 const hoursOpen = ['9 a.m.', '10 a.m.', '11 a.m.', '12 p.m.', '1 p.m.', '2 p.m.', '3 p.m.', '4 p.m.', '5 p.m.', '6 p.m.', '7 p.m.', '8 p.m.'];
 
@@ -16,7 +16,7 @@ test('it should return the last 10 characters of a string as an array', () => {
   expect(returnTen('world')).toStrictEqual(['w', 'o', 'r', 'l', 'd']);
 });
 
-test('it should return the max number', () => {
+test.only('it should return the max number', () => {
   expect(findMax([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(24);
 });
 

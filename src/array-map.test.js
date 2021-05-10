@@ -1,25 +1,25 @@
 /* eslint-disable quotes */
 import { doubleNumbers, stringItUp, captializeNames, namesOnly, makeStrings, readyToPutInTheDOM } from './array-map';
 
-test('doubles numbers', () => {
+test.skip('doubles numbers', () => {
   const input = [2, 5, 100]; // arrange
   const output = doubleNumbers(input); // act
   expect(output).toEqual([4, 10, 200]); // assert
 });
 
-test('string it up', () => {
+test.skip('string it up', () => {
   const input = [2, 5, 100];
   const output = stringItUp(input);
   expect(output).toEqual(["2", "5", "100"]);
 });
 
-test('captialize names', () => {
+test.skip('captialize names', () => {
   const input = ['john', 'JACOB', 'jinGleHeimer', 'schmidt'];
   const output = captializeNames(input);
   expect(output).toEqual(['John', 'Jacob', 'Jingleheimer', 'Schmidt']);
 });
 
-test('names Only', () => {
+test.skip('names Only', () => {
   const input = [
     {
       name: "Angelina Jolie",
@@ -52,7 +52,7 @@ test('names Only', () => {
   ]);
 });
 
-test('make strings', () => {
+test.skip('make strings', () => {
   const input = [
     {
       name: "Angelina Jolie",
@@ -85,7 +85,7 @@ test('make strings', () => {
   ]);
 });
 
-test('make headers', () => {
+test.skip('make headers', () => {
   const input = [
     {
       name: "Angelina Jolie",
