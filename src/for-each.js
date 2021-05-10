@@ -4,11 +4,8 @@ export function returnTen(str) {
 }
 
 export function findMax(matrix) {
-  let arr = matrix.map(n => {
-    Math.max.apply(null, n);
-  });
-  return arr;
-  
+  const value = matrix.map(n => (Math.max.apply(null, n)));
+  return Math.max.apply(null, value);
 }
 
 export function totalSum(matrix) {

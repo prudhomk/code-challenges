@@ -16,7 +16,7 @@ test('it should return the last 10 characters of a string as an array', () => {
   expect(returnTen('world')).toStrictEqual(['w', 'o', 'r', 'l', 'd']);
 });
 
-test.only('it should return the max number', () => {
+test('it should return the max number', () => {
   expect(findMax([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(24);
 });
 
