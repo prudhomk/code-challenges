@@ -25,7 +25,7 @@ test('it should return the total sum', () => {
   expect(totalSum([])).toStrictEqual(0);
 });
 
-test.only('It should create an object of data for each store', () => {
+test('It should create an object of data for each store', () => {
   expect(salesData(hoursOpen, grandTotal(cookieStores))).toStrictEqual([
     { sales: '88 cookies', time: '9 a.m.' },
     { sales: '153 cookies', time: '10 a.m.' },

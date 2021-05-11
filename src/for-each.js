@@ -1,6 +1,5 @@
 export function returnTen(str) {
   return str.split('').slice(-10);
-
 }
 
 export function findMax(matrix) {
@@ -14,9 +13,23 @@ export function totalSum(matrix) {
 }
 
 export function grandTotal(stores) {
-
+  let arr = [];
+  for (let i = 0; i < stores[0].length; i++) {
+    let hourlyTotal = 0;
+    for (let j = 0; j < stores.length; j++) {
+      hourlyTotal += stores[j][i];
+      
+    }
+    arr.push(hourlyTotal);
+  }
+  console.log(arr);
+  return arr;
 }
 
 export function salesData(hours, data) {
-
+  const result = [];
+  data.forEach((item, index) => {
+    result.push({ sales:`${item} cookies`, time: hours[index] });
+  });
+  return result;
 }
