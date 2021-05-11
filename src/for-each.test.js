@@ -11,26 +11,26 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 
-test('it should return the last 10 characters of a string as an array', () => {
+test.skip('it should return the last 10 characters of a string as an array', () => {
   expect(returnTen('hello world')).toStrictEqual(['e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']);
   expect(returnTen('world')).toStrictEqual(['w', 'o', 'r', 'l', 'd']);
 });
 
-test('it should return the max number', () => {
+test.skip('it should return the max number', () => {
   expect(findMax([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(24);
 });
 
-test('it should return the total sum', () => {
+test.skip('it should return the total sum', () => {
   expect(totalSum([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(81);
   expect(totalSum([])).toStrictEqual(0);
 });
 
-test('It should create an object of data for each store', () => {
+test.skip('It should create an object of data for each store', () => {
   expect(grandTotal(cookieStores)).toStrictEqual([88, 153, 252, 286, 139, 161, 145, 232, 276, 207, 161, 169]);
 });
 
 
-test('salesData function', () => {
+test.skip('salesData function', () => {
 
   expect(salesData(hoursOpen, grandTotal(cookieStores))).toStrictEqual([
     { sales: '88 cookies', time: '9 a.m.' },
