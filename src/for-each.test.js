@@ -26,6 +26,12 @@ test('it should return the total sum', () => {
 });
 
 test('It should create an object of data for each store', () => {
+  expect(grandTotal(cookieStores)).toStrictEqual([88, 153, 252, 286, 139, 161, 145, 232, 276, 207, 161, 169]);
+});
+
+
+test('salesData function', () => {
+
   expect(salesData(hoursOpen, grandTotal(cookieStores))).toStrictEqual([
     { sales: '88 cookies', time: '9 a.m.' },
     { sales: '153 cookies', time: '10 a.m.' },
@@ -40,10 +46,6 @@ test('It should create an object of data for each store', () => {
     { sales: '161 cookies', time: '7 p.m.' },
     { sales: '169 cookies', time: '8 p.m.' }
   ]);
-});
-
-
-test('salesData function', () => {
-
+  
   expect(salesData(hoursOpen, grandTotal(cookieStores)).length).toStrictEqual(hoursOpen.length);
 });
