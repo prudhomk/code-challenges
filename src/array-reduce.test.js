@@ -72,6 +72,6 @@ test('Returns an array of names', () => {
   expect(returnNames(starWarsData)).toStrictEqual(['Luke Skywalker', 'C-3PO', 'R2-D2', 'Darth Vader', 'Leia Organa']);
 });
 
-test.skip('Returns a string in reverse order', () => {
-  expect(reversedString('hello').toStrictEqual('olleh'));
+test('Returns a string in reverse order', () => {
+  expect(reversedString('hello')).toStrictEqual('olleh');
 });

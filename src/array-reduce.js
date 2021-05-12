@@ -27,5 +27,5 @@ export const returnNames = (arr) => {
 
 
 export const reversedString = (str) => {
-
+  return str.split('').reduce((accumulator, value) => value + accumulator, '');
 };
