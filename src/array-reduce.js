@@ -1,21 +1,31 @@
-const toLastNames = people => {
-
+export const toLastNames = people => {
+  return people.map(n => `${n.firstName} ${n.lastName}`);
 };
 
-const addValues = (arr) => {
-
+export const addValues = (arr) => {
+  return arr.reduce((sum, n) => sum += n, 0);
 };
 
-const addPurchases = (arr) => {
-
+export const addPurchases = (arr) => {
+  return arr.reduce((accumulator, value) => {
+    return accumulator += value.purchasePrice;
+  }, 0);
 };
 
-const countNumberOfElements = (arr) => {
-
+export const countNumberOfElements = (arr) => {
+  return arr.reduce((accumulator) => {
+    return accumulator + 1;
+  }, 0);
 };
 
-const returnNames = (arr) => {
-
+export const returnNames = (arr) => {
+  return arr.reduce((accumulator, value) => {
+    accumulator.push(value.name);
+    return accumulator;
+  }, []);
 };
 
 
+export const reversedString = (str) => {
+
+};

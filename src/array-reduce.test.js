@@ -1,4 +1,5 @@
-import { toLastNames, addValues, addPurchases, countNumberOfElements, returnNames } from './array-reduce';
+
+import { toLastNames, addValues, addPurchases, countNumberOfElements, returnNames, reversedString } from './array-reduce';
 
 let starWarsData = [{
   name: 'Luke Skywalker',
@@ -60,7 +61,7 @@ test('Returns an array that displays the sum of an array of numbers', () => {
 });
 
 test('Returns an array of the total price', () => {
-  expect(addPurchases([{ item:'switch', purchasePrice:399 }, { item:'tv', pruchasePrice:500 }])).toStrictEqual(899);
+  expect(addPurchases([{ item:'switch', purchasePrice:399 }, { item:'tv', purchasePrice:500 }])).toStrictEqual(899);
 });
 
 test('Returns the number of elements in the array', () => {
@@ -68,5 +69,9 @@ test('Returns the number of elements in the array', () => {
 });
 
 test('Returns an array of names', () => {
-  expect(returnNames(starWarsData).toStrictEqual(['Luke Skywalker', 'C-3PO', 'R2-D2', 'Darth Vader', 'Leia Organa']));
+  expect(returnNames(starWarsData)).toStrictEqual(['Luke Skywalker', 'C-3PO', 'R2-D2', 'Darth Vader', 'Leia Organa']);
+});
+
+test('Returns a string in reverse order', () => {
+  expect(reversedString('hello').toStrictEqual('olleh'));
 });
