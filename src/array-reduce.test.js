@@ -52,26 +52,26 @@ let starWarsData = [{
 }];
 
 
-test('Returns an array of names combined', () => {
+test.skip('Returns an array of names combined', () => {
   expect(toLastNames([{ firstName:'Jane', lastName:'Doe' }, { firstName:'James', lastName:'Bond' }])).toStrictEqual(['Jane Doe', 'James Bond']);
 });
 
-test('Returns an array that displays the sum of an array of numbers', () => {
+test.skip('Returns an array that displays the sum of an array of numbers', () => {
   expect(addValues([1, 2, 3, 4, 5])).toStrictEqual(15);
 });
 
-test('Returns an array of the total price', () => {
+test.skip('Returns an array of the total price', () => {
   expect(addPurchases([{ item:'switch', purchasePrice:399 }, { item:'tv', purchasePrice:500 }])).toStrictEqual(899);
 });
 
-test('Returns the number of elements in the array', () => {
+test.skip('Returns the number of elements in the array', () => {
   expect(countNumberOfElements([1, 3, 5, 6])).toStrictEqual(4);
 });
 
-test('Returns an array of names', () => {
+test.skip('Returns an array of names', () => {
   expect(returnNames(starWarsData)).toStrictEqual(['Luke Skywalker', 'C-3PO', 'R2-D2', 'Darth Vader', 'Leia Organa']);
 });
 
-test('Returns a string in reverse order', () => {
+test.skip('Returns a string in reverse order', () => {
   expect(reversedString('hello')).toStrictEqual('olleh');
 });
