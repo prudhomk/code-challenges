@@ -16,17 +16,23 @@ export const containsW = (str) => {
 };
 
 export const isNum = (input) => {
-  
+  const regex = /\d/;
+  if (regex.test(input)) return true;
+  return false;
 };
 
 export const containsWorld = (input) => {
-
+  const regex = /world/;
+  if (regex.test(input)) return true;
+  return false;
 };
 
 export const isCapitalized = (str) => {
-
+  const regex = /[A-Z]/;
+  return str.match(regex);
+  
 };
 
 export const citiesAtoJ = (arr) => {
-
+  return arr.match(/^[A-J]/);
 };
