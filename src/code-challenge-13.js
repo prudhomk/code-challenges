@@ -28,11 +28,18 @@ export const containsWorld = (input) => {
 };
 
 export const isCapitalized = (str) => {
-  const regex = /[A-Z]/;
-  return str.match(regex);
-  
+  const regex = /[A-Z]\w+/g;
+  let words = str.match(regex);
+  return words || [];
 };
 
 export const citiesAtoJ = (arr) => {
-  return arr.match(/^[A-J]/);
+  const regex = /^[A-J]/;
+  const cities = [];
+  arr.forEach(n => {
+    if (regex.test(n)) {
+      cities.push(n);
+    } 
+  });
+  return cities;
 };
