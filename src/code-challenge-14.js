@@ -1,5 +1,5 @@
 export const replaceZeroes = (string) => {
-  const regex = /0+\w/;
+  const regex = /0/g;
   return string.replace(regex, 'zero');
 };
 
