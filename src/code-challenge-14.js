@@ -4,11 +4,15 @@ export const replaceZeroes = (string) => {
 };
 
 export const validatePin = (pin) => {
-
+  const regex = /^.{4}$/;
+  if (regex.test(pin)) return true;
+  return false;
 };
 
 export const validateWord = (word) => {
-
+  const regex = /^.{5,10}$/;
+  if (regex.test(word)) return true;
+  return false;
 };
 
 export const hasNumber = (string) => {
@@ -19,7 +23,9 @@ export const hasNumber = (string) => {
 
 
 export const validateEmail = (email) => {
-
+  const regex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+  if (regex.test(email)) return true;
+  return false;
 };
 
 export const validatePhoneNumber = (phoneNumber) => {

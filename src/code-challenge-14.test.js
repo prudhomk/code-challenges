@@ -38,7 +38,7 @@ describe('Challenge 5', () => {
 });
 
 describe('Challenge 6', () => {
-  test.only('It should return true if phone number format is valid', () => {
+  test('It should return true if phone number format is valid', () => {
     expect(validatePhoneNumber('123-123-1234')).toStrictEqual(true);
     expect(validatePhoneNumber('5555555555')).toStrictEqual(true);
     expect(validatePhoneNumber('555555-5555')).toStrictEqual(true);
